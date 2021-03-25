@@ -8,15 +8,16 @@ using System.Threading.Tasks;
 
 namespace M3_ConsoleEFCore.CodeFirst.Models
 {
-    [Table("Player")]
-    public class Player
+    [Table("Team")]
+    public class Team
     {
         [Key]
         public int Id { get; set; }
         [Column(TypeName ="nvarchar(100)")]
-        public string FullName { get; set; }
-        [Column(TypeName = "int")]
-        public int Dorsal { get; set; }
+        public string Description { get; set; }
+        [Column(TypeName = "nvarchar(50)")]
+        public string Country { get; set; }
+
 
     }
 }

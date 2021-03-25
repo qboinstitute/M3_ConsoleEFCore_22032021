@@ -3,14 +3,16 @@ using M3_ConsoleEFCore.CodeFirst.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace M3_ConsoleEFCore.CodeFirst.Migrations
 {
     [DbContext(typeof(MundialDBContext))]
-    partial class MundialDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210325005357_New-Table-Team-v2")]
+    partial class NewTableTeamv2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
